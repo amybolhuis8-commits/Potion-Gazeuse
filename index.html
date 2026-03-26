@@ -15,18 +15,12 @@ body {
     background: #fdf6f9;
     color: #b76e8a;
     overflow-x: hidden;
-    animation: fadeIn 1.2s ease;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 
 /* NAV */
 nav {
     background: #e7b9c9;
-    padding: 25px 40px;
+    padding: 30px 40px; /* more space for bigger logo */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,16 +29,11 @@ nav {
     z-index: 10;
 }
 
-/* LOGO */
+/* ✅ LOGO FIX (THIS IS WHAT YOU WERE MISSING) */
 .logo-img {
-    height: 70px;
+    height: 90px; /* BIGGER */
     width: auto;
-    transition: 0.3s ease;
-    filter: drop-shadow(0 0 8px rgba(255,255,255,0.4));
-}
-
-.logo-img:hover {
-    transform: scale(1.05);
+    display: block;
 }
 
 /* NAV LINKS */
@@ -53,19 +42,14 @@ nav a {
     color: white;
     margin-left: 25px;
     font-weight: 500;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    opacity: 0.7;
 }
 
 /* HEADER */
 header {
     text-align: center;
     padding: 120px 20px 80px;
-    z-index: 2;
     position: relative;
+    z-index: 2;
 }
 
 header h1 {
@@ -183,7 +167,9 @@ footer {
 
 <!-- NAV -->
 <nav>
+    <!-- ✅ MAKE SURE THIS IS EXACT -->
     <img src="logo.png" class="logo-img">
+    
     <div>
         <a href="#menu">Menu</a>
         <a href="#story">Our Story</a>
@@ -263,12 +249,10 @@ footer {
     <h2>Our Story</h2>
     <p>
     Potion Gazeuse was created by five high school girls who turned a simple idea
-    into something elevated and creative. What started as experimenting with drinks
-    after school quickly became a passion project and a real business.
+    into something elevated and creative.
     </p>
     <p>
     We blend creativity, ambition, and friendship into every drink we create.
-    Our goal is to make bold flavors that feel aesthetic, modern, and unforgettable.
     </p>
 </section>
 
