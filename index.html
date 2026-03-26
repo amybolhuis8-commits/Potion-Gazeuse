@@ -15,12 +15,18 @@ body {
     background: #fdf6f9;
     color: #b76e8a;
     overflow-x: hidden;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 /* NAV */
 nav {
     background: #e7b9c9;
-    padding: 18px 40px;
+    padding: 25px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,15 +35,29 @@ nav {
     z-index: 10;
 }
 
+/* LOGO */
 .logo-img {
-    height: 40px;
+    height: 70px;
+    width: auto;
+    transition: 0.3s ease;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.4));
 }
 
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* NAV LINKS */
 nav a {
     text-decoration: none;
     color: white;
     margin-left: 25px;
     font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
 }
 
 /* HEADER */
@@ -163,7 +183,6 @@ footer {
 
 <!-- NAV -->
 <nav>
-    <!-- REPLACE logo.png WITH YOUR FILE -->
     <img src="logo.png" class="logo-img">
     <div>
         <a href="#menu">Menu</a>
@@ -188,22 +207,22 @@ footer {
             <img src="drink1.jpg" class="drink-img">
             <h3>Classic Cola</h3>
             <p>Classic Cola with lime, vanilla syrup, and creamer.</p>
-            <div class="price">$4,00 S/ $4,50 M/  $5,00 L</div>
+            <div class="price">$4,00 S / $4,50 M / $5,00 L</div>
         </div>
 
         <div class="menu-item">
-            <div class="tag">Most popular</div>
+            <div class="tag">Most Popular</div>
             <img src="drink2.jpg" class="drink-img">
             <h3>Shark Attack</h3>
             <p>Sprite with blue raspberry and grenadine.</p>
-            <div class="price">$4,50 S/ $4,75 M/  $5,25 L</div>
+            <div class="price">$4,50 S / $4,75 M / $5,25 L</div>
         </div>
 
         <div class="menu-item">
             <img src="drink3.jpg" class="drink-img">
             <h3>Root Beer Float</h3>
             <p>Root beer with vanilla and creamer.</p>
-            <div class="price">$4,00 S/ $4,50 M/  $5,00 L</div>
+            <div class="price">$4,00 S / $4,50 M / $5,00 L</div>
         </div>
 
         <div class="menu-item">
@@ -211,29 +230,29 @@ footer {
             <img src="drink4.jpg" class="drink-img">
             <h3>Canada Colada</h3>
             <p>Sprite with pineapple, coconut, and fruit topping.</p>
-            <div class="price">$4,00 S/ $4,50 M/  $5,00 L</div>
+            <div class="price">$4,00 S / $4,50 M / $5,00 L</div>
         </div>
 
         <div class="menu-item">
             <img src="drink5.jpg" class="drink-img">
             <h3>Slurp Juice</h3>
-            <p>Cotton candy Alani with blue raspberry syrup, marshmallow fluff, coconut creamer, topped with candy.</p>
-            <div class="price">$4,50 S/ $4,75 M/  $5,25 L</div>
+            <p>Cotton candy Alani with blue raspberry, marshmallow fluff, and creamer.</p>
+            <div class="price">$4,50 S / $4,75 M / $5,25 L</div>
         </div>
 
         <div class="menu-item">
             <div class="tag">New</div>
             <img src="drink6.jpg" class="drink-img">
             <h3>Butterfly Elixir</h3>
-            <p>Butterlfy pea flowers tea mixed with fresh lemonade.</p>
-            <div class="price">$4,00 S/ $4,50 M/  $5,00 L</div>
+            <p>Butterfly pea tea mixed with fresh lemonade.</p>
+            <div class="price">$4,00 S / $4,50 M / $5,00 L</div>
         </div>
 
         <div class="menu-item">
             <img src="drink7.jpg" class="drink-img">
             <h3>Honey Hibiscus</h3>
-            <p>Hibiscus tea brewed with a cinnamon stick and pineapple juices.</p>
-            <div class="price"> $4,00 S/ $4,50 M/  $5,00 L</div>
+            <p>Hibiscus tea with cinnamon and pineapple juice.</p>
+            <div class="price">$4,00 S / $4,50 M / $5,00 L</div>
         </div>
 
     </div>
